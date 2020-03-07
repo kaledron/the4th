@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    width: auto !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+html::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-m {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    line-height: 0;
+}
+
+.cats a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #D03726;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.cats a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.menu {
+    margin-top: 8.8vh;
+    margin-left: 91.2vw;
+    width: 3.2vw;
+    height: 4vh;
+    position: absolute;
+}
+
+.back {
+    margin-top: 13.6vh;
+    margin-left: 91.5vw;
+    width: 2.6vw;
+    height: 3vh;
+    position: absolute;
+}
+
+.home  {
+    margin-top: 1.7vw;
+    margin-left: 37vw;
+    width: 2.7vw;
+    height: 2.8vw;
+    position: absolute;
+}
+
+.market  {
+    margin-top: 1.7vw;
+    margin-left: 40.5vw;
+    width: 2.7vw;
+    height: 2.8vw;
+    position: absolute;
+}
+
+.about-l  {
+    margin-top: 27vh;
+    margin-left: 55.3vw;
+    width: 9.3vw;
+    height: 4vh;
+    position: absolute;
+}
+
+.looking-l {
+    margin-top: 34vh;
+    margin-left: 55.3vw;
+    width: 18vw;
+    height: 4vh;
+    position: absolute;
+}
+
+.investments-l {
+    margin-top: 41vh;
+    margin-left: 55.3vw;
+    width: 18.8vw;
+    height: 4vh;
+    position: absolute;
+}
+
+.doit {
+    margin-top: 86vh;
+    margin-left: 87.6vw;
+    width: 7vw;
+    height: 6.3vh;
+    position: absolute;
+}
+
+.campante-l {
+    margin-top: 21.4vh;
+    margin-left: 22.8vw;
+    width: 50.96vw;
+    height: 12.7vh;
+    position: absolute;
+}
+
+.campante-gif {
+    width: 84.4vw;
+    height: 85vh; 
+    padding-top: 8.34vh;
+    padding-left: 7.8vw;
+}
+
+.body-eden-l {
+    margin-top: 106.8vh;
+    margin-left: 27.9vw;
+    width: 42.44vw;
+    height: 10vh;
+    position: absolute;
+}
+
+.test {
+    width: 100vw;
+    height: 100vh;
+}
+
+.campante-label {
+    margin-top: 7vh;
+    margin-left: 7.8vw;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1080px) {
+    .doit {
+        margin-top: 80.5vh;
+        margin-left: 77vw;
+        width: 16.8vw;
+        height: 5vh;
+        position: absolute;
+    }
+
+    .menu {
+        margin-top: 5.6vh;
+        margin-left: 85.4vw;
+        width: 7.6vw;
+        height: 2.4vh;
+        position: absolute;
+    }
+
+    .home  {
+        margin-top: 17vh;
+        margin-left: 53.6vw;
+        width: 13vw;
+        height: 2.6vh;
+        position: absolute;
+    }
+    
+    .what-we-do-l  {
+        margin-top: 21.4vh;
+        margin-left: 53.6vw;
+        width: 35vw;
+        height: 2.4vh;
+        position: absolute;
+    }
+    
+    .about-l  {
+        margin-top: 25.8vh;
+        margin-left: 53.6vw;
+        width: 18.8vw;
+        height: 2.5vh;
+        position: absolute;
+    }
+    
+    .looking-l {
+        margin-top: 30vh;
+        margin-left: 53.6vw;
+        width: 36.4vw;
+        height: 2.2vh;
+        position: absolute;
+    }
+    
+    .investments-l {
+        margin-top: 34vh;
+        margin-left: 53.6vw;
+        width: 37vw;
+        height: 2.5vh;
+        position: absolute;
+    }
+
+    .campante-l {
+        margin-top: 16.2vh;
+        margin-left: 12.6vw;
+        width: 75.6vw;
+        height: 5.4vh;
+        position: absolute;
+    }
+    
+    .campante-gif {
+        width: 83.5vw;
+        height: 26vh; 
+        padding-top: 3vh;
+        padding-left: 8.7vw;
+    }
+    
+    .body-eden-l {
+        margin-top: 57.2vh;
+        margin-left: 12vw;
+        width: 76vw;
+        height: 5.4vh;
+        position: absolute;
+    }
+
+    .back {
+        margin-top: 8.8vh;
+        margin-left: 85.4vw;
+        width: 7.7vw;
+        height: 1.9vh;
+        position: absolute;
+    }
+}
