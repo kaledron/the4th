@@ -59,10 +59,8 @@ var menuArr = {
 window.addEventListener('scroll', function() {
     adaptMenuNavBar(this.scrollY);
 });
-console.log(screen_type);
 
 function adaptMenuNavBar(scrollY) {
-    console.log(scrollY);
     var menuEl = menuArr[screen_type];
     for( i in menuEl) {
         if (scrollY > menuEl[i][0] && scrollY < menuEl[i][1]) {
