@@ -17,16 +17,14 @@ html::-webkit-scrollbar {
     height: 0;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 .main {
     width: 100vw;
-    height: 100vh;
+    top: 0;
+}
+
+.main img {
+    line-height: 0px;
+    vertical-align: top;
 }
 
 .main-m {
@@ -38,130 +36,24 @@ a {
     color: inherit;
 }
 
-img {
-    line-height: 0;
-}
-
-.cats a:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px solid #D03726;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-.cats a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.menu {
-    margin-top: 8.8vh;
-    margin-left: 91.2vw;
-    width: 3.2vw;
-    height: 4vh;
-    position: absolute;
-}
-
-.back {
-    margin-top: 13.6vh;
-    margin-left: 91.5vw;
-    width: 2.6vw;
-    height: 3vh;
-    position: absolute;
-}
-
-.home  {
-    margin-top: 1.7vw;
-    margin-left: 37vw;
-    width: 2.7vw;
-    height: 2.8vw;
-    position: absolute;
-}
-
-.market  {
-    margin-top: 1.7vw;
-    margin-left: 40.5vw;
-    width: 2.7vw;
-    height: 2.8vw;
-    position: absolute;
-}
-
-.about-l  {
-    margin-top: 27vh;
-    margin-left: 55.3vw;
-    width: 9.3vw;
-    height: 4vh;
-    position: absolute;
-}
-
-.looking-l {
-    margin-top: 34vh;
-    margin-left: 55.3vw;
-    width: 18vw;
-    height: 4vh;
-    position: absolute;
-}
-
-.investments-l {
-    margin-top: 41vh;
-    margin-left: 55.3vw;
-    width: 18.8vw;
-    height: 4vh;
-    position: absolute;
-}
-
-.doit {
-    margin-top: 86vh;
-    margin-left: 87.6vw;
-    width: 7vw;
-    height: 6.3vh;
-    position: absolute;
-}
-
-.campante-l {
-    margin-top: 21.4vh;
-    margin-left: 22.8vw;
-    width: 50.96vw;
-    height: 12.7vh;
-    position: absolute;
-}
-
-.campante-gif {
-    width: 84.4vw;
-    height: 85vh; 
-    padding-top: 8.34vh;
-    padding-left: 7.8vw;
-}
-
-.body-eden-l {
-    margin-top: 106.8vh;
-    margin-left: 27.9vw;
-    width: 42.44vw;
-    height: 10vh;
-    position: absolute;
-}
-
-.test {
+.navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 124px;
 }
 
-.campante-label {
-    margin-top: 7vh;
-    margin-left: 7.8vw;
-    font-weight: bold;
+.left, 
+.menu,
+.right {
+    float: left;
+    width: calc(100% / 3);
+    margin: 0;
+    padding: 0;
 }
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
     .doit {
         margin-top: 80.5vh;
         margin-left: 77vw;
@@ -248,4 +140,4 @@ img {
         height: 1.9vh;
         position: absolute;
     }
-}
+} */
