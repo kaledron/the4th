@@ -29,6 +29,7 @@ html::-webkit-scrollbar {
 
 .main video {
     vertical-align: top;
+    width: 100vw;
 }
 
 .main-m {
@@ -71,91 +72,12 @@ a {
     padding: 0;
 }
 
-/* @media only screen and (max-width: 1080px) {
-    .doit {
-        margin-top: 80.5vh;
-        margin-left: 77vw;
-        width: 16.8vw;
-        height: 5vh;
-        position: absolute;
-    }
-
-    .menu {
-        margin-top: 5.6vh;
-        margin-left: 85.4vw;
-        width: 7.6vw;
-        height: 2.4vh;
-        position: absolute;
-    }
-
-    .home  {
-        margin-top: 17vh;
-        margin-left: 53.6vw;
-        width: 13vw;
-        height: 2.6vh;
-        position: absolute;
+@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+    #collaborate #page5-png {
+        margin-top: -775px;
     }
     
-    .what-we-do-l  {
-        margin-top: 21.4vh;
-        margin-left: 53.6vw;
-        width: 35vw;
-        height: 2.4vh;
-        position: absolute;
+    #collaborate #page6-png {
+        margin-top: -550px;
     }
-    
-    .about-l  {
-        margin-top: 25.8vh;
-        margin-left: 53.6vw;
-        width: 18.8vw;
-        height: 2.5vh;
-        position: absolute;
-    }
-    
-    .looking-l {
-        margin-top: 30vh;
-        margin-left: 53.6vw;
-        width: 36.4vw;
-        height: 2.2vh;
-        position: absolute;
-    }
-    
-    .investments-l {
-        margin-top: 34vh;
-        margin-left: 53.6vw;
-        width: 37vw;
-        height: 2.5vh;
-        position: absolute;
-    }
-
-    .campante-l {
-        margin-top: 16.2vh;
-        margin-left: 12.6vw;
-        width: 75.6vw;
-        height: 5.4vh;
-        position: absolute;
-    }
-    
-    .campante-gif {
-        width: 83.5vw;
-        height: 26vh; 
-        padding-top: 3vh;
-        padding-left: 8.7vw;
-    }
-    
-    .body-eden-l {
-        margin-top: 57.2vh;
-        margin-left: 12vw;
-        width: 76vw;
-        height: 5.4vh;
-        position: absolute;
-    }
-
-    .back {
-        margin-top: 8.8vh;
-        margin-left: 85.4vw;
-        width: 7.7vw;
-        height: 1.9vh;
-        position: absolute;
-    }
-} */
+}

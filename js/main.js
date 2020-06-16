@@ -3,6 +3,7 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
 var img_path = 'img/1920/menu/';
+var video_path = 'img/1366/';
 var screen_type = 'fhd';
 var menu = document.getElementsByClassName('menu')[0].children[0];
 
@@ -12,6 +13,7 @@ if (width >= 320 && width <= 1080) {
 }
 
 setImagePath();
+setVideoSource();
 
 var menuArr = {
     'fhd': {
@@ -80,11 +82,13 @@ function setImagePath() {
     if (width == 1920) {
         img_path = 'img/1920/menu/';
         screen_type = 'fhd';
+        video_path = 'img/1920/';
     } 
     
     if (width > 1200 && width < 1430 && height != 950 || width == 1366 && height == 768) {
         img_path = 'img/1366/menu/';
         screen_type = 'hd';
+        video_path = 'img/1366/';
     } 
     if (width == 1440 && height == 900) {
         img_path = 'img/1366/menu/';
@@ -120,4 +124,9 @@ function setImagePath() {
         img_path = 'img/m/500/menu/';
         screen_type = 'm320';
     }
+}
+
+function setVideoSource() {
+    document.getElementById('page5-vid').src = video_path + 'page5.webm';
+    document.getElementById('page6-vid').src = video_path + 'page6.webm';
 }
