@@ -19,8 +19,8 @@ var menuArr = {
         '2'    : [580,1250],
         '3'    : [1250,2350],
         '4'    : [2350,3450],
-        '5and6': [3450,5350],
-        '7and8': [5350,7250],
+        '5and6': [3450,6000],
+        '7and8': [6000,7250],
         '9'    : [7250,8350],
         '10'   : [8350,100000],
     },
@@ -57,6 +57,7 @@ var menuArr = {
 };
 
 window.addEventListener('scroll', function() {
+    // console.log(this.scrollY);
     adaptMenuNavBar(this.scrollY);
 });
 
@@ -80,7 +81,6 @@ function setImagePath() {
         img_path = 'img/1920/menu/';
         screen_type = 'fhd';
     } 
-    console.log('WIDTH: ', width, ' HEIGHT: ', height);
     
     if (width > 1200 && width < 1430 && height != 950 || width == 1366 && height == 768) {
         img_path = 'img/1366/menu/';

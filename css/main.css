@@ -27,6 +27,10 @@ html::-webkit-scrollbar {
     vertical-align: top;
 }
 
+.main video {
+    vertical-align: top;
+}
+
 .main-m {
     display: none;
 }
@@ -43,6 +47,20 @@ a {
     width: 100vw;
     height: 124px;
 }
+
+#collaborate #page5-png { 
+    margin-top: -1100px; 
+    margin-left: 0px;
+    position: absolute; 
+    z-index: auto; 
+} 
+
+#collaborate #page6-png { 
+    margin-top: -900px; 
+    margin-left: 0px;
+    position: absolute; 
+    z-index: auto; 
+} 
 
 .left, 
 .menu,
