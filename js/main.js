@@ -21,10 +21,10 @@ var menuArr = {
         '2'    : [580,1250],
         '3'    : [1250,2350],
         '4'    : [2350,3450],
-        '5and6': [3450,6000],
-        '7and8': [6000,7250],
-        '9'    : [7250,8350],
-        '10'   : [8350,100000],
+        '5and6': [3450,5850],
+        '7and8': [5850,7850],
+        '9'    : [7850,9200],
+        '10'   : [9200,100000],
     },
     'hd': {
         '1'    : [0,480],
@@ -129,4 +129,5 @@ function setImagePath() {
 function setVideoSource() {
     document.getElementById('page5-vid').src = video_path + 'page5.webm';
     document.getElementById('page6-vid').src = video_path + 'page6.webm';
+    document.getElementById('page9-vid').src = video_path + 'page9.webm';
 }

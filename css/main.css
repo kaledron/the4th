@@ -63,6 +63,13 @@ a {
     z-index: auto; 
 } 
 
+#index #page9-png { 
+    margin-top: -1090px; 
+    margin-left: 0px;
+    position: absolute; 
+    z-index: auto; 
+} 
+
 .left, 
 .menu,
 .right {
@@ -79,5 +86,9 @@ a {
     
     #collaborate #page6-png {
         margin-top: -550px;
+    }
+    
+    #index #page9-png {
+        margin-top: -768px;
     }
 }
