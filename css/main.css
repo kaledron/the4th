@@ -30,6 +30,7 @@ html::-webkit-scrollbar {
 .main video {
     vertical-align: top;
     width: 100vw;
+    z-index: 1;
 }
 
 .main-m {
@@ -44,10 +45,14 @@ a {
 .navbar {
     position: fixed;
     top: 0;
-    /* overflow: hidden; */
     width: 100vw;
     height: 124px;
+    z-index: 5000;
 }
+
+/* #collaborate {
+
+} */
 
 #collaborate #page5-png { 
     margin-top: -1100px; 
