@@ -66,7 +66,7 @@ window.addEventListener('scroll', function() {
 function adaptMenuNavBar(scrollY) {
     var menuEl = menuArr[screen_type];
     for( i in menuEl) {
-        if (scrollY > menuEl[i][0] && scrollY < menuEl[i][1]) {
+        if (scrollY >= menuEl[i][0] && scrollY < menuEl[i][1]) {
             setImageSource(i);
         }
     }

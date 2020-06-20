@@ -44,7 +44,7 @@ a {
 .navbar {
     position: fixed;
     top: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100vw;
     height: 124px;
 }
@@ -77,6 +77,52 @@ a {
     width: calc(100% / 3);
     margin: 0;
     padding: 0;
+}
+
+.home, 
+.market, 
+.algorithm, 
+.whatwedo, 
+.collaborate, 
+.upskill, 
+.index, 
+.boarding {
+    position: absolute;
+    margin-top: 2vw;
+    width: 2.8vw;
+    height: 4.5vw;
+}
+
+.home {
+    margin-left: 37vw;
+}
+
+.market {
+    margin-left: 40.4vw;
+}
+
+.algorithm {
+    margin-left: 43.8vw;
+}
+
+.whatwedo {
+    margin-left: 47vw;
+}
+
+.collaborate {
+    margin-left: 50.4vw;
+}
+
+.upskill {
+    margin-left: 53.7vw;
+}
+
+.index {
+    margin-left: 56.8vw;
+}
+
+.boarding {
+    margin-left: 60.2vw;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1900px) {
