@@ -127,7 +127,7 @@ function setImagePath() {
 }
 
 function setVideoSource() {
-    document.getElementById('page5-vid').src = video_path + 'page5.webm';
-    document.getElementById('page6-vid').src = video_path + 'page6.webm';
+    document.getElementById('page5-vid').src = video_path + 'page5.mp4';
+    document.getElementById('page6-vid').src = video_path + 'page6.mp4';
     document.getElementById('page9-vid').src = video_path + 'page9.webm';
 }
