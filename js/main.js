@@ -8,12 +8,13 @@ var screen_type = 'fhd';
 var menu = document.getElementsByClassName('menu')[0].children[0];
 
 if (width >= 320 && width <= 1080) {
-    document.getElementsByClassName('main')[0].style.display = 'block'; 
-    document.getElementsByClassName('main-m')[0].style.display = 'none'; 
+    document.getElementsByClassName('main')[0].style.display = 'none'; 
+    document.getElementsByClassName('main-m')[0].style.display = 'block'; 
 }
-
+console.log(height);
 setImagePath();
 setVideoSource();
+console.log(video_path);
 
 var menuArr = {
     'fhd': {
@@ -100,34 +101,39 @@ function setImagePath() {
         screen_type = '1280';
     } 
     
-    if (width >= 1080 && width < 1200 && height > 2200) {
+    if (width >= 1080 && width < 1200 && height >=1920) {
         img_path = 'img/m/2280/menu/';
         screen_type = 'm1080';
+        video_path = 'img/1080/';
     }
     
     if (width >= 720 && width < 1080 && height > 650) {
         img_path = 'img/m/736/menu/';
         screen_type = 'm720';
+        video_path = 'img/640/';
     }
     
     if (width >= 414 && width < 720 && height > 730) {
         img_path = 'img/m/667/menu/';
         screen_type = 'm414';
+        video_path = 'img/640/';
     }
     
     if (width >= 360 && width < 414 && height > 630) {
         img_path = 'img/m/640/menu/';
         screen_type = 'm360';
+        video_path = 'img/640/';
     } 
     
     if (width < 360 && height > 500) {
         img_path = 'img/m/500/menu/';
         screen_type = 'm320';
+        video_path = 'img/640/';
     }
 }
 
 function setVideoSource() {
     document.getElementById('page5-vid').src = video_path + 'page5.mp4';
     document.getElementById('page6-vid').src = video_path + 'page6.mp4';
-    document.getElementById('page9-vid').src = video_path + 'page9.webm';
+    document.getElementById('page9-vid').src = video_path + 'page9.mp4';
 }
