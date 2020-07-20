@@ -8,9 +8,16 @@ var screen_type = 'fhd';
 var menu = document.getElementsByClassName('menu')[0].children[0];
 
 if (width >= 320 && width <= 1080) {
+    var menu = document.getElementsByClassName('menu')[1].children[0];
     document.getElementsByClassName('main')[0].style.display = 'none'; 
     document.getElementsByClassName('main-m')[0].style.display = 'block'; 
+} else {
+    window.addEventListener('scroll', function() {
+        // console.log(this.scrollY);
+        adaptMenuNavBar(this.scrollY);
+    });
 }
+
 setImagePath();
 setVideoSource();
 // menuM();
@@ -58,12 +65,17 @@ var menuArr = {
         '9'    : [6400,7500],
         '10'   : [7500,50000],
     },
+    'm1080': {
+        '1'    : [0,1920],
+        '2'    : [1920,3840],
+        '3'    : [3840,5760],
+        '4'    : [5760,7680],
+        '5and6': [7680,9840],
+        '7and8': [9840,13680],
+        '9'    : [13680,15600],
+        '10'   : [15600,50000],
+    },
 };
-
-window.addEventListener('scroll', function() {
-    // console.log(this.scrollY);
-    adaptMenuNavBar(this.scrollY);
-});
 
 function adaptMenuNavBar(scrollY) {
     var menuEl = menuArr[screen_type];
@@ -140,11 +152,11 @@ function setVideoSource() {
 }
 
 function menuM() {
-    if (document.getElementsByClassName('main-menu')[0].style.display == 'block' ) {
-        document.getElementsByClassName('main-menu')[0].style.display = 'none';
-        document.getElementsByClassName('menu')[1].style.display = 'block';
+    if (document.getElementsByClassName('main-menu')[0].style.visibility == 'visible' ) {
+        document.getElementsByClassName('main-menu')[0].style.visibility = 'hidden';
+        document.getElementsByClassName('menu')[1].style.visibility = 'visible';
     } else {
-        document.getElementsByClassName('main-menu')[0].style.display = 'block';
-        document.getElementsByClassName('menu')[1].style.display = 'none';
+        document.getElementsByClassName('main-menu')[0].style.visibility = 'visible';
+        document.getElementsByClassName('menu')[1].style.visibility = 'hidden';
     }
 }
