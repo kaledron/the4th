@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-title" content="The 4th">
   <meta name="application-name" content="The 4th">
   <link rel="icon" href="favicon.ico" type="image/x-iconn" />
-  <link rel="stylesheet" href="css/main.css?3">
+  <link rel="stylesheet" href="css/main.css?4">
   <body>
     <div class="main">
       <div class="navbar">
@@ -110,6 +110,23 @@
     </div>
 
     <div class="main-m">
+      <a href="#" onclick="menuM()"><div class="mmenu"></div></a>
+      <a href="#m-home"><div class="m-home">&nbsp;</div></a>     
+      <a href="#m-market"><div class="m-market">&nbsp;</div></a>
+      <a href="#m-algorithm"><div class="m-algorithm">&nbsp;</div></a>
+      <a href="#m-whatwedo"><div class="m-whatwedo">&nbsp;</div></a>
+      <a href="#m-collaborate"><div class="m-collaborate">&nbsp;</div></a>
+      <a href="#m-upskill"><div class="m-upskill">&nbsp;</div></a>
+      <a href="#m-index"><div class="m-index">&nbsp;</div></a>
+      <a href="#m-boarding"><div class="m-boarding">&nbsp;</div></a>
+      <div class="main-menu" style="display: none;">
+        <picture>
+          <source media="(min-height: 1080px)" srcset="img/1080/menu.png">
+          <source media="(min-width: 375px)" srcset="img/736/menu.png">
+          <source media="(min-width: 360px)" srcset="img/640/menu.png">
+          <img src="img/1080/menu.png" style="width: 100vw;">
+        </picture>    
+      </div>
       <div class="menu">
         <picture>
           <source media="(min-height: 1080px)" srcset="img/1080/menu-ontop.png">
@@ -118,29 +135,29 @@
           <img src="img/1080/menu-ontop.png" style="width: 100vw;">
         </picture>    
       </div>
-      <picture id="home">
+      <picture id="m-home">
         <source media="(min-height: 1080px)" srcset="img/1080/page1.png">
         <source media="(min-height: 731px)" srcset="img/736/page1.png">
         <source media="(min-height: 567px)" srcset="img/640/page1.png">
         <img src="img/1080/page1.png" style="width: 100vw;">
       </picture>    
-      <picture id="market">
+      <picture id="m-market">
         <source media="(min-height: 1080px)" srcset="img/1080/page2.png">
         <source media="(min-height: 731px)" srcset="img/736/page2.png">
         <source media="(min-height: 567px)" srcset="img/640/page2.png">
         <img src="img/1080/page2.png" style="width: 100vw;">
       </picture>    
-      <picture id="algorithm">
+      <picture id="m-algorithm">
         <source media="(min-height: 1080px)" srcset="img/1080/page3.png">
         <source media="(min-height: 731px)" srcset="img/736/page3.png">
         <img src="img/1080/page3.png" style="width: 100vw;">
       </picture>    
-      <picture id="whatwedo">
+      <picture id="m-whatwedo">
         <source media="(min-height: 1080px)" srcset="img/1080/page4.png">
         <source media="(min-height: 731px)" srcset="img/736/page4.png">
         <img src="img/1080/page4.png" style="width: 100vw;">
       </picture>    
-      <div id="collaborate">
+      <div id="m-collaborate">
         <video id="page5-vid" preload autoplay muted playsinline loop tabindex="0" webkit-playsinline>
           <source src="img/1080/page5.mp4" type="video/mp4"></source>
         </video>   
@@ -164,7 +181,7 @@
           <img src="img/1080/page6.png" style="width: 100vw;">
         </picture>    
       </div>
-      <div id="upskill">
+      <div id="m-upskill">
         <picture>
           <source media="(min-height: 1080px)" srcset="img/1080/page7.png">
           <source media="(min-height: 731px)" srcset="img/736/page7.png">
@@ -176,7 +193,7 @@
           <img src="img/1080/page8.png" style="width: 100vw;">
         </picture>  
       </div>  
-      <div id="index">
+      <div id="m-index">
         <video id="page9-vid" preload autoplay muted playsinline loop tabindex="0" webkit-playsinline>
           <source src="img/1080/page9.mp4" type="video/webm"></source>
         </video>   
@@ -187,7 +204,7 @@
           <img src="img/1080/page9.png" style="width: 100vw;">
         </picture>    
       </div>
-      <picture id="boarding">
+      <picture id="m-boarding">
         <source media="(min-height: 1080px)" srcset="img/1080/page10.png">
         <source media="(min-height: 731px)" srcset="img/736/page10.png">
         <img src="img/1080/page10.png" style="width: 100vw;">
@@ -195,4 +212,4 @@
     </div>
   </body>
 </html>
-<script src="js/main.js?3"></script> 
+<script src="js/main.js?4"></script> 

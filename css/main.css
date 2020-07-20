@@ -42,6 +42,21 @@ html::-webkit-scrollbar {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+.m-home, 
+.m-market, 
+.m-algorithm, 
+.m-whatwedo, 
+.m-collaborate, 
+.m-upskill, 
+.m-index, 
+.m-boarding {
+    position: absolute;
+    margin-left: 10vw;
+    width: 50vw;
+    height: 12.5vw;
 }
 
 @media only screen and (min-width: 1915px) {
@@ -220,6 +235,22 @@ a {
 
 @media only screen and (max-width: 1080px) and (max-height: 1920px) {
 
+    .main-m .main-menu {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 5000;
+    }
+
+    .main-m .mmenu {
+        position: fixed;
+        margin-top: 5vw;
+        margin-left: 82vw;
+        width: 12vw;
+        height: 10vw;
+        z-index: 6000;
+    }
+
     .main-m .menu {
         position: fixed;
         top: 0;
@@ -228,28 +259,60 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    .m-home {
+        margin-top: 30vw;
+    }
+
+    .m-market {
+        margin-top: 44.5vw;
+    }
+
+    .m-algorithm {
+        margin-top: 58.5vw;
+    }
+
+    .m-whatwedo {
+        margin-top: 73vw;
+    }
+
+    .m-collaborate {
+        margin-top: 87.5vw;
+    }
+
+    .m-upskill {
+        margin-top: 101.5vw;
+    }
+
+    .m-index {
+        margin-top: 115.5vw;
+    }
+
+    .m-boarding {
+        margin-top: 130vw;
+    }
+
+    #m-collaborate #page5-1png { 
         margin-top: -1086px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -546px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -1080px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -1750px;
         margin-left: 0px;
         position: absolute; 
@@ -267,28 +330,28 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    #m-collaborate #page5-1png { 
         margin-top: -780px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -380px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -720px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -1170px;
         margin-left: 0px;
         position: absolute; 
@@ -306,28 +369,28 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    #m-collaborate #page5-1png { 
         margin-top: -640px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -300px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -540px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -950px;
         margin-left: 0px;
         position: absolute; 
@@ -345,28 +408,28 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    #m-collaborate #page5-1png { 
         margin-top: -440px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -200px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -370px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -630px;
         margin-left: 0px;
         position: absolute; 
@@ -384,28 +447,28 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    #m-collaborate #page5-1png { 
         margin-top: -390px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -190px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -340px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -560px;
         margin-left: 0px;
         position: absolute; 
@@ -423,28 +486,28 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    #m-collaborate #page5-1png { 
         margin-top: -380px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -180px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -320px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -555px;
         margin-left: 0px;
         position: absolute; 
@@ -462,28 +525,28 @@ a {
         z-index: 5000;
     }
 
-    #collaborate #page5-1png { 
+    #m-collaborate #page5-1png { 
         margin-top: -340px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
 
-    #collaborate #page5-2png { 
+    #m-collaborate #page5-2png { 
         margin-top: -160px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     } 
     
-    #collaborate #page6-png {
+    #m-collaborate #page6-png {
         margin-top: -270px;
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
     }
     
-    #index #page9-png {
+    #m-index #page9-png {
         margin-top: -500px;
         margin-left: 0px;
         position: absolute; 

@@ -11,9 +11,10 @@ if (width >= 320 && width <= 1080) {
     document.getElementsByClassName('main')[0].style.display = 'none'; 
     document.getElementsByClassName('main-m')[0].style.display = 'block'; 
 }
-console.log(height);
 setImagePath();
 setVideoSource();
+// menuM();
+console.log(height);
 console.log(video_path);
 
 var menuArr = {
@@ -136,4 +137,14 @@ function setVideoSource() {
     document.getElementById('page5-vid').src = video_path + 'page5.mp4';
     document.getElementById('page6-vid').src = video_path + 'page6.mp4';
     document.getElementById('page9-vid').src = video_path + 'page9.mp4';
+}
+
+function menuM() {
+    if (document.getElementsByClassName('main-menu')[0].style.display == 'block' ) {
+        document.getElementsByClassName('main-menu')[0].style.display = 'none';
+        document.getElementsByClassName('menu')[1].style.display = 'block';
+    } else {
+        document.getElementsByClassName('main-menu')[0].style.display = 'block';
+        document.getElementsByClassName('menu')[1].style.display = 'none';
+    }
 }
