@@ -57,6 +57,7 @@ a {
     margin-left: 10vw;
     width: 50vw;
     height: 12.5vw;
+    z-index: 6000;
 }
 
 @media only screen and (min-width: 1915px) {
@@ -292,7 +293,7 @@ a {
     }
 
     #m-collaborate #page5-1png { 
-        margin-top: -1086px; 
+        margin-top: -1000px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
@@ -330,8 +331,40 @@ a {
         z-index: 5000;
     }
 
+    .m-home {
+        margin-top: 30vw;
+    }
+
+    .m-market {
+        margin-top: 44.5vw;
+    }
+
+    .m-algorithm {
+        margin-top: 58.5vw;
+    }
+
+    .m-whatwedo {
+        margin-top: 73vw;
+    }
+
+    .m-collaborate {
+        margin-top: 87.5vw;
+    }
+
+    .m-upskill {
+        margin-top: 101.5vw;
+    }
+
+    .m-index {
+        margin-top: 115.5vw;
+    }
+
+    .m-boarding {
+        margin-top: 130vw;
+    }
+
     #m-collaborate #page5-1png { 
-        margin-top: -780px; 
+        margin-top: -730px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
@@ -370,7 +403,7 @@ a {
     }
 
     #m-collaborate #page5-1png { 
-        margin-top: -640px; 
+        margin-top: -570px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
@@ -409,7 +442,7 @@ a {
     }
 
     #m-collaborate #page5-1png { 
-        margin-top: -440px; 
+        margin-top: -380px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
@@ -448,7 +481,7 @@ a {
     }
 
     #m-collaborate #page5-1png { 
-        margin-top: -390px; 
+        margin-top: -360px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
@@ -487,7 +520,7 @@ a {
     }
 
     #m-collaborate #page5-1png { 
-        margin-top: -380px; 
+        margin-top: -345px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
@@ -526,7 +559,7 @@ a {
     }
 
     #m-collaborate #page5-1png { 
-        margin-top: -340px; 
+        margin-top: -300px; 
         margin-left: 0px;
         position: absolute; 
         z-index: auto; 
